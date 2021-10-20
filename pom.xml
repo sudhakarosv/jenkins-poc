@@ -25,6 +25,15 @@
 				<artifactId>maven-clean-plugin</artifactId>
 				<version>3.0.0</version>
 			</plugin>
+			 
+            <plugin>
+                <groupId>org.mule.tools.maven</groupId>
+                <artifactId>mule-maven-plugin</artifactId>
+                <version>${mule.maven.plugin.version}</version>
+                <extensions>true</extensions>
+                <configuration>
+                </configuration>
+            </plugin>
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
@@ -37,7 +46,7 @@
 				<username>${username}</username>
 				<password>${password}</password>
 				<environment>${environment}</environment>
-				<applicationName>${application.name}</applicationName>
+				<applicationName>${ application.name}</applicationName>
 				<muleVersion>${mule.version}</muleVersion>
 				<workers>${workers}</workers>
 				<workerType>${worker.Type}</workerType>
