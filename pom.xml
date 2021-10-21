@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.mycompany</groupId>
-	<artifactId>jenkins-demo</artifactId>
+	<artifactId>test-jenkins</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>mule-application</packaging>
 
-	<name>jenkins-demo-poc</name>
+	<name>test-jenkins</name>
 
     <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -31,15 +31,6 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-				</configuration>
-			</plugin>
-			
-			<plugin>
-				<groupId>org.mule.tools.maven</groupId>
-				<artifactId>mule-maven-plugin</artifactId>
-				<version>${mule.maven.plugin.version}</version>
-				<extensions>true</extensions>
-				<configuration>
 				
 				<cloudHubDeployment>
 				<uri>https://anypoint.mulesoft.com</uri>
@@ -53,7 +44,6 @@
 				<objectStoreV2>true</objectStoreV2>
 				</cloudHubDeployment>
 				</configuration>
-				
 			</plugin>
 		</plugins>
 	</build>
